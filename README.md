@@ -1,4 +1,4 @@
-# DakshinKart Commerce Platform
+# SouthAura Commerce Platform
 
 A premium South Indian storefront plus an enterprise commerce operating system
 covering CRM, ERP, CMS, SEO, fulfilment, finance and growth.
