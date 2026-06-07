@@ -24,6 +24,7 @@ const links = [
   { label: "Home", href: "/" },
   { label: "New in", href: "/shop?sort=newest" },
   { label: "Bestsellers", href: "/shop?sort=popular" },
+  { label: "Ayurveda", href: "/category/ayurvedic-products" },
   { label: "Gifts", href: "/shop?tag=gift" },
   { label: "Our story", href: "/about" },
   { label: "Journal", href: "/blog" },
