@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-ink antialiased transition-colors duration-300 dark:bg-[#101713] dark:text-[#f5f0e6];
+}
+
+::selection {
+  @apply bg-sandal text-ink;
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-bold uppercase tracking-[0.24em] text-brass;
+  }
+
+  .display-title {
+    @apply font-display text-4xl font-semibold leading-[0.95] tracking-[-0.035em] sm:text-5xl lg:text-6xl;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-semibold tracking-[-0.025em] sm:text-4xl;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-leaf px-6 py-3.5 text-sm font-bold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#173a2b] hover:shadow-luxe focus:outline-none focus:ring-2 focus:ring-leaf focus:ring-offset-2 dark:bg-sandal dark:text-ink;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/15 bg-white/70 px-6 py-3.5 text-sm font-bold text-ink backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-brass hover:bg-white dark:border-white/15 dark:bg-white/5 dark:text-white dark:hover:bg-white/10;
+  }
+
+  .surface {
+    @apply rounded-[28px] border border-ink/10 bg-white/75 shadow-soft backdrop-blur-md dark:border-white/10 dark:bg-white/[0.05];
+  }
+
+  .field {
+    @apply h-12 w-full rounded-2xl border border-ink/10 bg-white px-4 text-sm outline-none transition placeholder:text-ink/40 focus:border-brass focus:ring-4 focus:ring-sandal/15 dark:border-white/10 dark:bg-white/5 dark:placeholder:text-white/35;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}

@@ -1,0 +1,16 @@
+.next
+node_modules
+.netlify
+.runtime
+.env*
+!.env.example
+npm-debug.log*
+*.log
+.DS_Store
+*.tsbuildinfo
+
+# Local visual verification captures
+/*-desktop.png
+/*-mobile.png
+/customer-assistant-home.png
+/*-improved.png
