@@ -38,6 +38,7 @@ export const adminNavigation: AdminNavGroup[] = [
     label: "Relationships",
     items: [
       { label: "Customer CRM", href: "/admin/customers", icon: "Users", badge: "12" },
+      { label: "Sales Leads", href: "/admin/leads", icon: "ContactRound", badge: "New" },
       { label: "Follow-ups", href: "/admin/follow-ups", icon: "ListTodo", badge: "7" },
       { label: "Abandoned carts", href: "/admin/abandoned-carts", icon: "ShoppingCart", badge: "28" },
       { label: "Marketing", href: "/admin/marketing", icon: "Megaphone" },

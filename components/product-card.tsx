@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Product } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
 import { useStore } from "@/components/store-provider";
+import { ProductLeadDialog } from "@/components/product-lead-dialog";
 
 export function ProductCard({ product }: { product: Product }) {
   const router = useRouter();
@@ -169,6 +170,7 @@ export function ProductCard({ product }: { product: Product }) {
           <MessageCircle className="h-3.5 w-3.5" />
           Ask on WhatsApp
         </a>
+        <ProductLeadDialog product={product} quantity={quantity} compact />
       </div>
     </motion.article>
   );

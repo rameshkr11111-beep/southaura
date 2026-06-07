@@ -22,6 +22,7 @@ import { formatCurrency } from "@/lib/utils";
 import { useStore } from "@/components/store-provider";
 import { ProductRow } from "@/components/product-row";
 import { trackCommerceEvent } from "@/components/analytics-tracker";
+import { ProductLeadDialog } from "@/components/product-lead-dialog";
 
 export function ProductDetailClient({
   product,
@@ -210,6 +211,9 @@ export function ProductDetailClient({
               >
                 <MessageCircle className="h-4 w-4" /> WhatsApp inquiry
               </a>
+            </div>
+            <div className="mt-3">
+              <ProductLeadDialog product={product} quantity={quantity} />
             </div>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
